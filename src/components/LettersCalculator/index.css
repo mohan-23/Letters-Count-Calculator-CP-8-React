@@ -1,0 +1,121 @@
+.bg-container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.image {
+  height: 300px;
+  width: 400px;
+  order: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .image {
+    order: 1;
+  }
+}
+
+.count-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  color: #e4e7eb;
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    color: #e4e7eb;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+  }
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .label-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
+}
+
+.label {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.input {
+  background-color: transparent;
+  border: 1px solid #e4e7eb;
+  width: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  color: #e4e7eb;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+}
+
+.count-increase {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #219a6f;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  width: 200px;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .count-increase {
+    align-self: flex-start;
+  }
+}
